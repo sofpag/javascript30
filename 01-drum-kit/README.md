@@ -2,7 +2,6 @@
 
 ## Make it sound: event listener; atribute selector
 
-1ST PART FUNCTION: make it sound
 ![first attemp](./img/Screenshot_4.png)
 `addEventListener("keydown", function (e) {`
 / with this we can capture the number key of your keyboard
