@@ -1,3 +1,7 @@
+#Drum kit
+
+## Make it sound: event listener; atribute selector
+
 1ST PART FUNCTION: make it sound
 ![first attemp](./img/Screenshot_4.png)
 `addEventListener("keydown", function (e) {`
@@ -12,7 +16,10 @@
 `audio.play()`
 `});`
 
-2ND PART FUNCTION: make it pretty
+## Make it pretty: classlist add and remove; forEach; this;
+
 ![first attemp classlist](./img/Screenshot_1.png)
+
 / select by class (.key) the ones with the atribute ...
+
 `const key = document.querySelector(.key[data-key="${e.keyCode}"]);`
