@@ -1,0 +1,78 @@
+:root {
+    --size_clock: 200px;
+    --main_color: rgb(57, 55, 58);
+}
+
+* {
+    box-sizing: border-box;
+    font-size: 10px;
+    color: #fff;
+}
+
+body {
+    background-color: var(--main_color);
+}
+
+.buttom-home {
+    display: inline-block;
+    margin: 1rem;
+    font-family: sans-serif;
+}
+
+.buttom-home a {
+    text-decoration: none;
+}
+
+.central-container {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    padding: 100px;
+    border-radius: 10%;
+    background-color: rgba(255, 215, 185);
+    background: linear-gradient(106.5deg, rgba(255, 215, 185, 0.91) 23%, rgba(223, 159, 247, 0.8) 93%);
+    box-shadow: 0 0 2rem #111110;
+}
+
+.clock-face {
+    position: relative;
+    width: var(--size_clock);
+    height: var(--size_clock);
+    border: 10px solid var(--main_color);
+    border-radius: 100%;
+    box-shadow: 0 0 2rem rgba(255, 215, 185);
+    background-color: hsla(20, 25%, 32%, 0.301);
+}
+
+.hand {
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    height: 7px;
+    border-radius: 10%;
+    background-color: var(--main_color);
+    box-shadow: 0 0 .3rem #111110;
+    transform: rotate(90deg);  /*(1) esto lo rota en su eje central. 90° lo pone en vertical en vez de horizontal*/
+    transform-origin: 100%; /*(2) hace que el eje central de rotación este en el extremo en vez del medio (50%)*/
+    transition: all 0.05s; /*hace el movimiento de las agujas fluido en vez de brusco*/
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hour-hand {
+    width: 45%;
+    margin-left: 5%;
+}
+
+.min-hand {
+    width: 40%;
+    margin-left: 10%;
+}
+
+.second-hand {
+    width: 35%;
+    margin-left: 15%;
+}
