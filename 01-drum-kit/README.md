@@ -1,4 +1,5 @@
 1ST PART FUNCTION: make it sound
+![first attemp](./img/Screenshot_4.png)
 `addEventListener("keydown", function (e) {`
 / with this we can capture the number key of your keyboard
 `console.log(e.keyCode);`
@@ -12,5 +13,6 @@
 `});`
 
 2ND PART FUNCTION: make it pretty
+![first attemp classlist](./img/Screenshot_1.png)
 / select by class (.key) the ones with the atribute ...
 `const key = document.querySelector(.key[data-key="${e.keyCode}"]);`
