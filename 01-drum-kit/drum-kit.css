@@ -4,13 +4,27 @@
 
 body {
     background-image: url("../img/concert.jpg");
-    background-color: #82828a;
+    background-color: #8a8682;
     background-repeat: repeat;
     background-size: cover;
+    font-size: 10px;
+    font-family: sans-serif;
 }
+
+.buttom-home {
+    display: inline-block;
+    margin: 1rem;
+
+}
+
+.buttom-home a {
+    text-decoration: none;
+}
+
 
 .keys {
     display: flex;
+    flex: 1; /*Let all the flexible items be the same length, regardless of its content:*/
     min-height: 100vh;
     align-items: center;
     justify-content: center;
@@ -21,28 +35,35 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-width: 90px;
-    height: 90px;
-    margin: 1rem;
-    border: 4px solid hsl(22, 43%, 20%);
+    width: 7rem;
+    height: 7rem;
+    margin: .8rem;
+}
+
+.key {
+    border: 3px solid hsl(22, 43%, 20%);
     border-radius: 10%;
+    padding: 0.5rem;
     transition: all 0.07s; /*ni idea esto*/
     background-color: hsla(21, 59%, 11%, 0.301);
     color:hsl(0, 0%, 100%);
     text-align: center;
-    text-transform: uppercase;
-    text-shadow: 1px 0 5px black;
-    font-weight: 900;
+    text-shadow: 1px 0 4px black;
     font-size: 1.5rem;
 }
 
-.key span {
-    color:hsl(23, 84%, 54%);
-    font-size: 14px;
+.sound {
+    margin-top: .5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .09rem;
+    color: hsl(23, 100%, 66%);
 }
 
 .playing {
     transform: scale(1.1);
-    border-color:hsl(51, 94%, 50%);
-    color:hsl(51, 94%, 50%);
+    border: 4px solid #fff2c1;
+    box-shadow: 0 0 1rem #fff2c1;
+    color: #fff2c1;
+    font-weight: 700;
 }
