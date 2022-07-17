@@ -1,0 +1,27 @@
+:root {
+    --base: rgb(214, 193, 4);
+    --spacing: 10px;
+    --blur: 10px;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(65, 63, 63);
+}
+
+main {
+    
+}
+
+form {
+}
+
+img {
+    padding: var(--spacing);
+    background-color: var(--base);
+    filter: blur(var(--blur));
+}
+
+.color-text {
+    color: var(--base);
+}
