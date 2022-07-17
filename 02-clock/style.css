@@ -63,8 +63,8 @@ body {
 }
 
 .hour-hand {
-    width: 45%;
-    margin-left: 5%;
+    width: 28%;
+    margin-left: 22%;
 }
 
 .min-hand {
@@ -73,6 +73,7 @@ body {
 }
 
 .second-hand {
-    width: 35%;
-    margin-left: 15%;
+    width: 40%;
+    height: 3px;
+    margin-left: 10%;
 }
