@@ -1,19 +1,39 @@
 :root {
     --base: rgb(214, 193, 4);
     --spacing: 10px;
-    --blur: 10px;
+    --blur: 1px;
+    box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
-    background-color: rgb(65, 63, 63);
+    min-height: 100vh;
+    background-color:#08041a;
+    color: white;
+    font-family: 'helvetica neue', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 
 main {
-    
+    text-align: center;
 }
 
 form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.controls {
+    display: flex;
+    margin: 50px;
+}
+
+input {
+    width: 40px;
+    margin: 0px 10px 10px 10px;
 }
 
 img {
@@ -22,6 +42,21 @@ img {
     filter: blur(var(--blur));
 }
 
+.buttom-home {
+    display: inline-block;
+    margin: 1rem;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.buttom-home a {
+    text-decoration: none;
+    color: white;
+}
+
 .color-text {
     color: var(--base);
 }
+
+
+
